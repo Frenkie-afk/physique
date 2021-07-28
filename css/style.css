@@ -67,7 +67,7 @@ header {
     outline: none;
 }
 
-::placeholder {
+header input::placeholder {
     color: #959595;
 }
 
@@ -300,13 +300,14 @@ section.subscribe .container {
 }
 
 footer {
-    padding: 51px 0 65px 28px;
+    padding-top: 51px ;
     background-color: #252525;
     font-family: sans-serif;
 }
 
 .container.d-flex.end {
     align-items: flex-end;
+    margin-bottom: 65px;
 }
 
 .footer-socials {
