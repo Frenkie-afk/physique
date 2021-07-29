@@ -10,12 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 </head>
 <body>
 
 <header>
     <div class="container d-flex border">
-        <a href="#" class="logo"><img src="icon/logo.png" alt="logo"></a>
+        <div class="header-mobile">
+            <a href="#" class="logo"><img src="icon/logo.png" alt="logo"></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         <form class="search" action="" method="post">
             <input class="search_input" type="search" name="search" placeholder="SEARCH" autocomplete="off">
             <button class="search-btn" type="submit">
@@ -81,7 +89,9 @@
 </header>
 
 <section class="trainers">
-    <img src="img/bg.jpg" alt="bg">
+    <span class="bg">
+        <img src="img/bg.jpg" alt="bg">
+    </span>
     <div class="container border absolute">
         <h1>OUR TRAINERS</h1>
     </div>

@@ -24,6 +24,7 @@ header {
 .container {
     max-width: 1170px;
     margin: auto;
+    padding: 0 15px;
 }
 
 .container.d-flex {
@@ -230,13 +231,15 @@ section.trainers .container.border.absolute{
     left: 0;
     right: 0;
     bottom: 25px;
-    padding-bottom: 34px;
-    border-bottom: 3px solid #ff0000;
+    /*padding-bottom: 34px;*/
+    /*border-bottom: 3px solid #ff0000;*/
 }
 
 h1 {
     font-size: 50px;
     font-weight: 400;
+    padding-bottom: 34px;
+    border-bottom: 3px solid #ff0000;
 }
 
 .content {
@@ -260,6 +263,7 @@ section.subscribe .container {
     margin-bottom: 32px;
     font-family: sans-serif;
     text-transform: uppercase;
+    line-height: 28px;
 }
 
 .subscribe-form {
