@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Now';
+    src: url('../fonts/Now-Bold.eot');
+    src: url('../fonts/Now-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Now-Bold.woff2') format('woff2'),
+    url('../fonts/Now-Bold.woff') format('woff'),
+    url('../fonts/Now-Bold.ttf') format('truetype'),
+    url('../fonts/Now-Bold.svg#Now-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Now';
+    src: url('../fonts/Now-Medium.eot');
+    src: url('../fonts/Now-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Now-Medium.woff2') format('woff2'),
+    url('../fonts/Now-Medium.woff') format('woff'),
+    url('../fonts/Now-Medium.ttf') format('truetype'),
+    url('../fonts/Now-Medium.svg#Now-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -12,6 +39,156 @@ img {
     width: 100%;
     display: block;
 }
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: .9s;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.overlay.active {
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    height: 150vh;
+    transition: .6s;
+    opacity: 1;
+}
+
+.ui-dialog{
+    top: 0;
+    padding: 0;
+    background-color: #fbfbfb;
+    border-radius: 7px;
+    /*width: 750px;*/
+}
+
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable  {
+    min-width: 750px !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+
+
+#dialog {
+    background-color: #fbfbfb;
+    /*min-width: 750px;*/
+    padding: 40px 85px 166px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    font-family: 'Now', sans-serif;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 41px 0;
+    text-align: center;
+    /*min-width: 750px;*/
+    border-radius: 0;
+    line-height: 24px;
+    cursor: unset;
+}
+
+.ui-dialog .ui-dialog-title {
+    float: none;
+    margin: 0;
+    width: unset;
+    overflow: unset;
+    text-overflow: unset;
+}
+
+.form_reset {
+    text-align: center;
+    font-family: 'Now', sans-serif;
+}
+.reset_email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.reset_email label {
+    font-size: 22px;
+    color: #363636;
+    width: 25%;
+}
+
+
+.reset_email input {
+    font-family: 'Now', sans-serif;
+    min-width: 384px;
+    padding: 16px 20px;
+    outline: none;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    font-size: 22px;
+    transition: .3s;
+}
+
+.reset_email input:focus {
+    border: 1px solid #557ccd;
+}
+
+.form_reset button {
+    font-family: 'Now', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    margin: 0  auto 29px;
+    padding: 0 100px;
+    background-color: #bababa;
+    border: none;
+    border-radius: 3px;
+    line-height: 60px;
+    min-width: 528px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form_reset button:hover {
+    background-color: #959595;
+}
+
+.form_reset > label {
+    display: block;
+    font-size: 22px;
+    color: #363636;
+    margin-bottom: 30px;
+}
+
+.form_reset a {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    line-height: 60px;
+    min-width: 528px;
+    padding: 0 50px;
+    transition: .3s;
+    background: -moz-linear-gradient(left,  #557ccd 0%, #4865a3 100%);
+    background: -webkit-linear-gradient(left,  #557ccd 0%,#4865a3 100%);
+    background: linear-gradient(to right,  #557ccd 0%,#4865a3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#557ccd', endColorstr='#4865a3',GradientType=1 );
+}
+
+
 
 header {
     position: fixed;
@@ -244,6 +421,7 @@ h1 {
 
 .content {
     padding: 250px 0 ;
+    /*background-color: black;*/
 }
 
 .subscribe {

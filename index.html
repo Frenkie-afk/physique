@@ -9,10 +9,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-queries.css">
+
 </head>
 <body>
+<div class="overlay" id="overlay"></div>
+<div id="dialog" title="FORGOT YOUR PASSWORD?">
+        <form class="form_reset" action="" method="post">
+            <div class="reset_email">
+                <label>ENTER YOUR EMAIL</label>
+                <input type="email" name="email">
+            </div>
+            <button type="submit">RESET PASSWORD</button>
+            <label>OR</label>
+            <a href="#" target="_blank">LOG IN USING FACEBOOK</a>
+        </form>
+</div>
+
+
 
 <header>
     <div class="container d-flex border">
@@ -34,7 +50,7 @@
             <span class="btn-icon"><img src="icon/shop_icon.png" alt="shop"></span>
             ONLINE STORE
         </a>
-        <a href="#" class="btn grey">
+        <a href="#" class="btn grey" id="pop-up">
             <span class="btn-icon"><img src="icon/login_icon.png" alt="login"></span>
             LOG IN
         </a>
@@ -198,5 +214,8 @@
 
 
 <script src="https://kit.fontawesome.com/daab012097.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
