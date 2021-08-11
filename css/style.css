@@ -72,7 +72,8 @@ img {
 }
 
 .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable  {
-    min-width: 750px !important;
+    max-width: 750px !important;
+    width: 100% !important;
     position: fixed !important;
     top: 50% !important;
     left: 50% !important;
@@ -174,6 +175,7 @@ img {
 
 .form_reset a {
     display: inline-block;
+    font-family: 'Now', sans-serif;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -182,12 +184,21 @@ img {
     min-width: 528px;
     padding: 0 50px;
     transition: .3s;
+    border-radius: 3px;
     background: -moz-linear-gradient(left,  #557ccd 0%, #4865a3 100%);
     background: -webkit-linear-gradient(left,  #557ccd 0%,#4865a3 100%);
     background: linear-gradient(to right,  #557ccd 0%,#4865a3 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#557ccd', endColorstr='#4865a3',GradientType=1 );
 }
 
+.form_reset a:before {
+    content: "\f39e";
+    margin-right: 16px;
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+}
 
 
 header {
